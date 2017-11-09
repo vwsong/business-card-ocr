@@ -1,3 +1,5 @@
+# Class definition for contacts.
+
 class ContactInfo:
 
     def __init__(self, name, phoneNumber, emailAddress):
@@ -9,7 +11,7 @@ class ContactInfo:
         return self.name
 
     def getPhoneNumber(self):
-        return self.getPhoneNumber
+        return self.phoneNumber
 
     def getEmailAddress(self):
-        return self.getEmailAddress
+        return self.emailAddress

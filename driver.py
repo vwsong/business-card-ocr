@@ -1,3 +1,5 @@
+# Unit testing + driver .py file 
+
 import BusinessCardParser
 import unittest
 
@@ -34,7 +36,7 @@ awilson@abctech.com
 class TestStringMethods(unittest.TestCase):
 
     def printAttributes(self, contactInfo):
-        return contactInfo.name, contactInfo.phoneNumber, contactInfo.emailAddress
+        return (contactInfo.getName(), contactInfo.getPhoneNumber(), contactInfo.getEmailAddress())
 
     def test1(self):
         t1 = BusinessCardParser.getContactInfo(test1)
